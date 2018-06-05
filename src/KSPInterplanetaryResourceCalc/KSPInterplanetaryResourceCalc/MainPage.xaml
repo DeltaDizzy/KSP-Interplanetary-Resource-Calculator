@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="KSPInterplanetaryResourceCalc.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:KSPInterplanetaryResourceCalc"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="Title" HorizontalAlignment="Center" Margin="350,0,338,0" Text="KSP Interplanetary Resource Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="1232" FontSize="72"/>
+        <TextBlock x:Name="Version" HorizontalAlignment="Center" Margin="867,103,915,0" Text="v0.1.0" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="138" FontSize="48"/>
+        <Grid HorizontalAlignment="Left" Height="837" Margin="87,159,0,0" VerticalAlignment="Top" Width="640">
+            <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Center" Margin="207,0,220,0" VerticalAlignment="Bottom" Height="71" Width="213" FontSize="48" FontFamily="Segoe UI Semibold"/>
+            <Grid HorizontalAlignment="Left" Height="43" Margin="2,2,0,0" VerticalAlignment="Top" Width="378">
+                <TextBlock x:Name="resourceName" HorizontalAlignment="Left" Margin="0,6,0,0" Text="Resource Name:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="176" FontSize="24"/>
+                <TextBox x:Name="resourceNameInput" HorizontalAlignment="Left" Margin="183,9,0,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="43" Margin="4,51,0,0" VerticalAlignment="Top" Width="378">
+                <TextBlock x:Name="planetName" HorizontalAlignment="Left" Margin="0,6,0,0" Text="Planet Name:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="176" FontSize="24" SelectionChanged="resourceName1_SelectionChanged"/>
+                <TextBox x:Name="planetNameInput" HorizontalAlignment="Left" Margin="183,9,0,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="43" Margin="5,0,0,638" VerticalAlignment="Bottom" Width="378">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="375.2"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="presenceChance" HorizontalAlignment="Left" Margin="0,6,-195,0" Text="Prescence Chance:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="195" FontSize="24" SelectionChanged="resourceName1_SelectionChanged_1" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="prescenceChanceInput" HorizontalAlignment="Left" Margin="208,7,-401,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159" Grid.ColumnSpan="2"/>
+            </Grid>
+            <TextBlock x:Name="Distribution" HorizontalAlignment="Left" Text="Distribution:" TextWrapping="Wrap" VerticalAlignment="Top" Margin="5,120,0,0" Width="176" Height="34" FontSize="30" FontFamily="Segoe UI Semibold"/>
+            <Grid HorizontalAlignment="Left" Height="43" Margin="5,0,0,592" VerticalAlignment="Bottom" Width="378">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="375.2"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="minAbundance" HorizontalAlignment="Left" Margin="0,6,-195,0" Text="Min Abundance:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="195" FontSize="24" SelectionChanged="resourceName1_SelectionChanged_1" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="minAbundanceInput" HorizontalAlignment="Left" Margin="208,7,-401,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159" Grid.ColumnSpan="2"/>
+            </Grid>
+            <Grid HorizontalAlignment="Left" Height="43" Margin="5,0,0,553" VerticalAlignment="Bottom" Width="378">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="375.2"/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <TextBlock x:Name="maxAbundance" HorizontalAlignment="Left" Margin="0,6,-195,0" Text="Max Abundance:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="195" FontSize="24" SelectionChanged="resourceName1_SelectionChanged_1" Grid.ColumnSpan="2"/>
+                <TextBox x:Name="maxAbundanceInput" HorizontalAlignment="Left" Margin="208,7,-401,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159" Grid.ColumnSpan="2"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
