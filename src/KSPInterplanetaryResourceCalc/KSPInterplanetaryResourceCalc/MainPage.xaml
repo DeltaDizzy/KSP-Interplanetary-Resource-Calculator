@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <TextBlock x:Name="Title" HorizontalAlignment="Center" Margin="350,0,338,0" Text="KSP Interplanetary Resource Calculator" TextWrapping="Wrap" VerticalAlignment="Top" Height="89" Width="1232" FontSize="72"/>
+        <TextBlock x:Name="Title" HorizontalAlignment="Center" Text="KSP Interplanetary Resource Calculator" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="72"/>
         <TextBlock x:Name="Version" HorizontalAlignment="Center" Margin="867,103,915,0" Text="v0.1.0" TextWrapping="Wrap" VerticalAlignment="Top" Height="64" Width="138" FontSize="48"/>
         <Grid HorizontalAlignment="Left" Height="837" Margin="87,159,0,0" VerticalAlignment="Top" Width="640">
             <Button x:Name="Calculate" Content="Calculate" HorizontalAlignment="Center" Margin="207,0,220,0" VerticalAlignment="Bottom" Height="71" Width="213" FontSize="48" FontFamily="Segoe UI Semibold"/>
