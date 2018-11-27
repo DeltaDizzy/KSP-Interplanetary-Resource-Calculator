@@ -17,7 +17,7 @@
                 <TextBox x:Name="resourceNameInput" HorizontalAlignment="Left" Margin="183,9,0,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="43" Margin="4,51,0,0" VerticalAlignment="Top" Width="378">
-                <TextBlock x:Name="planetName" HorizontalAlignment="Left" Margin="0,6,0,0" Text="Planet Name:" TextWrapping="Wrap" VerticalAlignment="Top" Height="28" Width="176" FontSize="24" SelectionChanged="resourceName1_SelectionChanged"/>
+                <TextBlock x:Name="planetName" HorizontalAlignment="Left" Margin="0,6,0,0" Text="Planet Name:" TextWrapping="Wrap" VerticalAlignment="Center" FontSize="24" SelectionChanged="resourceName1_SelectionChanged"/>
                 <TextBox x:Name="planetNameInput" HorizontalAlignment="Left" Margin="183,9,0,0" Text="" VerticalAlignment="Top" Width="193" RenderTransformOrigin="0.642,2.159"/>
             </Grid>
             <Grid HorizontalAlignment="Left" Height="43" Margin="5,0,0,638" VerticalAlignment="Bottom" Width="378">
